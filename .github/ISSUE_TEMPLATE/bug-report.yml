@@ -1,0 +1,67 @@
+name: "🐞 Bug Report"
+description: Report something broken or not working as expected.
+title: "[Bug] <short description here>"
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in **MealFrame**! Help us squash it by filling out the info below.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did you encounter this issue?
+      placeholder: "e.g., macOS, Hugo v0.125.0, GitHub Actions"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe what went wrong. Be as detailed as you can.
+      placeholder: "e.g., The meal plan page fails to build when I include a second recipe section..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Go to '...'
+        2. Run this command or click this button...
+        3. See this error message
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+      placeholder: "e.g., The weekly plan should render with all three meals shown."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Console Output (if any)
+      description: Paste any relevant logs, errors, or screenshots.
+      render: shell
+      placeholder: "e.g., ERROR 2025/04/05 12:34:56 failed to render layout..."
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: How bad is it?
+      description: What’s the impact of this bug?
+      options:
+        - label: ❗ Blocks key workflows (can't build or use MealFrame)
+        - label: ⚠️ Annoying but has a workaround
+        - label: 🐜 Cosmetic or minor glitch
