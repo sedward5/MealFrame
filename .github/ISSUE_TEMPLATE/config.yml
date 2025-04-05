@@ -4,3 +4,6 @@ issue_templates:
   - name: "💡 Feature Request"
     description: Suggest a new feature or enhancement for MealFrame.
     file: feature-request.yml
+  - name: "🐞 Bug Report"
+    description: Report a bug or unexpected behavior.
+    file: bug-report.yml
