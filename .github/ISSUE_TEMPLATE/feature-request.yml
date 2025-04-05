@@ -1,0 +1,60 @@
+name: "\U0001F4A1 Feature Request"
+description: Suggest a new feature for MealFrame
+title: "[Feature] <short description here>"
+labels: ["feature", "enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new feature for **MealFrame**! Please fill out the sections below to help us understand the problem and how your idea helps.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: A short, one-sentence summary of the feature you’re requesting.
+      placeholder: "e.g., Auto-generate weekly grocery list based on meal plan"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this feature solve?
+      description: Describe the use case or issue you’re facing that this feature would address.
+      placeholder: |
+        e.g., Right now, I have to manually write out the shopping list based on each recipe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how you imagine the feature working.
+      placeholder: |
+        e.g., When I finish selecting meals for the week, I want to click a button to generate a grouped grocery list...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      description: What parts of MealFrame might this affect?
+      options:
+        - label: Hugo content structure
+        - label: Recipe import system
+        - label: GitHub Actions automation
+        - label: Shortcodes or UI templates
+        - label: Data structure or storage
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Notes
+      description: Anything else you want to add? Links, mockups, or prior art are welcome.
+      placeholder: "You can leave this blank if there’s nothing extra to share."
+```
