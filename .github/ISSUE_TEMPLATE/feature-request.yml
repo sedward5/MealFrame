@@ -57,4 +57,3 @@ body:
       label: Additional Notes
       description: Anything else you want to add? Links, mockups, or prior art are welcome.
       placeholder: "You can leave this blank if there’s nothing extra to share."
-```
