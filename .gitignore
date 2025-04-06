@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+dist
+tmp
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+hugo.exe
+hugo.linux
+hugo.darwin
