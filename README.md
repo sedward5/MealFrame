@@ -11,6 +11,7 @@ MealFrame is an open-source Hugo-based tool for planning meals by the week. It�
 - [Project Goals](#project-goals)
 - [How It Works](#how-it-works)
 - [Key Features](#key-features)
+- [File Structure](#file-structure)
 - [Roadmap](#roadmap)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
@@ -61,6 +62,39 @@ MealFrame uses Hugo and Markdown to generate a static site that contains:
 - Browse meal history
 - Mobile-friendly layout
 - Easy to deploy (GitHub Pages, Netlify, etc.)
+
+---
+
+## 📁 File Structure
+
+```
+MealFrame/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── feature_request.yml
+│   │   └── config.yml
+│   └── workflows/
+│       └── deploy.yml               # GitHub Actions deploy script (optional but useful)
+├── archetypes/
+│   └── default.md
+├── content/
+│   ├── _index.md
+│   └── recipes/                     # Markdown-based recipe content
+├── data/
+│   └── mealplans/                   # Where weekly plans can live as .yaml or .json
+├── layouts/
+│   └── _default/                    # (Optional) overrides for Ananke layout
+├── static/
+│   └── images/
+├── themes/
+│   └── ananke/                      # Submodule
+├── .gitignore
+├── config.toml                      # Hugo config
+├── hugo.toml                        # Optional alternate config for environments
+├── LICENSE
+├── README.md
+└── DEPLOY.md                        # Deployment documentation
+```
 
 ---
 
