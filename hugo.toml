@@ -1,0 +1,7 @@
+baseURL = "https://your-site-url.com/"
+languageCode = "en-us"
+title = "MealFrame"
+theme = "ananke"
+
+[params]
+  description = "Plan meals, generate shopping lists, and track your recipe history."
